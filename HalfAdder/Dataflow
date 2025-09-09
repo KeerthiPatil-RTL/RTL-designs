@@ -1,4 +1,4 @@
-# Design code 
+#Design code 
 
 module HA(a,b,sum,carry);
 input a,b;
