@@ -1,4 +1,4 @@
-#Design code
+# Design code
 
 module HA(a,b,sum,carry);
 input a,b;
@@ -7,9 +7,8 @@ assign sum = a^b;
 assign carry = a&b;
 endmodule
 
------------------------------------------------------------------------
 
-#Testbench
+# Testbench
 
 module HA_TB;
 reg a,b;
