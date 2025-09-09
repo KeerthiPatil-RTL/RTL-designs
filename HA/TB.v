@@ -12,3 +12,4 @@ $monitor("time=%0t | a=%b b=%b | sum=%b carry=%b", $time, a, b, sum, carry);
 $finish;
 end
 endmodule
+   
