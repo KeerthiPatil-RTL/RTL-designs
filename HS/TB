@@ -1,1 +1,13 @@
-
+module TB;
+wire D,B;
+reg a,b;
+HS_DF DUT(.a(a),.b(b),.D(D),.B(B));
+initial begin
+$monitor("time=%0t | a=%b b=%b |D=%b B=%b",$time, a, b, D, B);
+a=0;b=0; #5
+a=0;b=1; #5
+a=1;b=0;#5     
+a=1;b=1; #5  
+$finish;     
+end
+endmodule
