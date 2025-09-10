@@ -1,4 +1,3 @@
-```
 module HA (input a,b,output s,c);
 assign s= a ^ b;
 assign c= a & b;
@@ -10,7 +9,9 @@ HA FA0(.a(a),.b(b),.s(s1),.c(c1));
 HA FA1(.a(s1),.b(cin),.s(sum),.c(c2));
 assign cout = c1| c2;
 endmodule
-```
+
+`````````````````````
+
 module FATB;
     reg a, b, cin;
     wire sum, cout;
